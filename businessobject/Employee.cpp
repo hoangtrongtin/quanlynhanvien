@@ -78,7 +78,6 @@ void Employee::FromJson(json j){
     //     j["SuperSSN"],
     //     j["DNO"]
     // );
-    cout<<"from json"<<endl;
     this->Id = j["Id"];
     this->FName = j["FName"];
     this->MInit = j["MInit"];

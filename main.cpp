@@ -65,9 +65,7 @@ int main()
     TableUnit* employee = new Employee();
     //TableData *employeeData;
     
-    cout<<"main1"<<endl;
     myUI.ImportFromFile(employee, employeeData, "data/Employees.data");
-    cout<<"main2"<<endl;
     cout << employeeData->ToString();
     //myUI.ExportToFile(*employeeData, "data/Employees.data");
 

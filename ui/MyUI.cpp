@@ -34,21 +34,21 @@ int MyUI::ExportToFile(TableData tD, string filename){
 //     inFile.close();
 //     return tD;
 // }
+//void MyUI::ImportFromFile(TableUnit* tU, TableData* tD, string filename){
 void MyUI::ImportFromFile(TableUnit* tU, TableData* tD, string filename){
     tD->SetMaxID(0);
     tD->ReSize(0);
     ifstream inFile(filename);
     const int maxSize = 255;
     char buff[maxSize];
-    cout<<"ImportFromFile3"<<endl;
+    //vector <TableUnit*> _vtu;
+    //_vtu = tD->GetTableData;
     while(inFile.getline(buff, maxSize))
     {
         json j = json::parse(buff);
-        cout<<"ImportFromFilewhile"<<endl;
-        //TableUnit *tU;
+        //TableUnit *tU = _vtu[0];
         tU->FromJson(j);
         tD->PushBack(tU);
     }
     inFile.close();
-    cout<<"ImportFromFile2"<<endl;
 }

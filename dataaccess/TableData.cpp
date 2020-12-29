@@ -12,7 +12,6 @@ int TableData::GetMaxID(){
 }
 void TableData::SetMaxID(int i){
     _maxId = i;
-    std::cout<<"ImportFromFile2"<<endl;
 }
 vector <TableUnit*> TableData::GetTableData(){
     return _data;
