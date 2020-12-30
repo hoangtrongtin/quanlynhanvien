@@ -33,6 +33,14 @@ EmployeeData::EmployeeData(string filename){
     }
     inFile.close();
 }
+// int EmployeeData::PushBackNull(){
+//     Employee e;
+//     if(_maxId<e.GetID()){
+//         _maxId = e.GetID();
+//     }
+//     _data.push_back(&e);
+//     return _data.size();
+// };
 // int EmployeeData::GetMaxID(){
 //     return _maxId;
 // }

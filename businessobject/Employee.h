@@ -27,6 +27,7 @@ public:
     string ToString();
     json ToJson();
     void FromJson(json);
+    TableUnit *NewPoint();
 };
 
 #endif

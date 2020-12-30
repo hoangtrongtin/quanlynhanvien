@@ -46,9 +46,9 @@ void MyUI::ImportFromFile(TableUnit* tU, TableData* tD, string filename){
     while(inFile.getline(buff, maxSize))
     {
         json j = json::parse(buff);
-        //TableUnit *tU = _vtu[0];
-        tU->FromJson(j);
-        tD->PushBack(tU);
+        TableUnit *tU1 = tU->NewPoint();
+        tU1->FromJson(j);
+        tD->PushBack(tU1);
     }
     inFile.close();
 }

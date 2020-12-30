@@ -20,6 +20,7 @@ public:
     virtual json ToJson() = 0;
     //virtual TableUnit* FromJson(json) = 0;
     virtual void FromJson(json) = 0;
+    virtual TableUnit *NewPoint()= 0;
 };
 
 #endif

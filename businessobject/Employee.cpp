@@ -91,3 +91,7 @@ void Employee::FromJson(json j){
     this->DNO = j["DNO"];
     //return tU;
 }
+TableUnit* Employee::NewPoint(){
+    TableUnit *tU = new Employee();
+    return tU;
+}

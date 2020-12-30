@@ -12,6 +12,7 @@ private:
 public:
     EmployeeData();
     EmployeeData(string);
+    //int PushBackNull();
     // int GetMaxID();
     //int PushBack(Employee);
     //int Get(int i);///

@@ -15,6 +15,7 @@ public:
     vector <TableUnit*> GetTableData();
     void ReSize(int);
     int PushBack(TableUnit*);
+    //virtual int PushBackNull();
     int PushBack(TableUnit*, json);
     //int Get(int i);
     TableUnit* GetPointer(int i);
